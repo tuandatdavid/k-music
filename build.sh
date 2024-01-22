@@ -9,16 +9,6 @@ rm -R "./screenshot"
 zip -r "./application.zip" *
 cd ../
 
-rm -R ./.v3
-mkdir ./.v3 && cp -R * ./.v3
-cd ./.v3
-rm "./manifest.webapp"
-rm "./build.sh"
-rm -R "./screenshot"
-zip -r "./applicationV3.zip" *
-cp ./applicationV3.zip ../
-cd ../
-
 cd ./.v2 && cp ./application.zip ../
 cd ../
 rm -R ./.v2
